@@ -5,15 +5,15 @@ const cors = require("cors")
 const app = express();
 
 app.use(cors({
-    origin : "*"
+    origin: "*"                  
 }))
 
-app.use("/api/category",route)
+app.use("/api/category", route)
 
-app.get("/",(req,res)=>{
+app.get("/", (req, res) => {
     res.send("api is running fine!")
 })
 
-app.listen(7000,()=>{
+app.listen(7000, () => {
     console.log("server is running!")
 })
